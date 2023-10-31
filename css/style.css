@@ -1,11 +1,17 @@
 /* LAST RULE WINS, MORE SPECIFIC SELECTOR WINS */
+
+/* custom properties */
+:root {
+    --dark-blue: navy;
+    --gold-en: goldenrod;
+}
 * {
     box-sizing: border-box;
 }
 
 
 body, html {
-    background-color: navy;
+    background-color: var(--dark-blue);
     min-height: 100vh;
     margin: 0;
     color: white;
@@ -31,7 +37,7 @@ h1 {
 }
 
 h2 {
-    color: goldenrod;
+    color: var(gold-en);
     font-family: Ethnocentric;
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
